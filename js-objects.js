@@ -54,6 +54,14 @@ userProfile.contact.phone = "0798546695";
 console.log(userProfile.contact.phone);
 
 
+
+if ("name" in userProfile){
+    console.log('userProfile.name')
+}else{
+    console.log("the property does not exist")
+};
+
+
 //DELETING - REMOVING OBJECTS
 
 delete user.email;
@@ -69,6 +77,8 @@ object.keys(user).forEach(key => delete user[key]);
 
 // checking if a property exists
 console.log("name " in user); //true
+
+
 
 
 //freezing objects to prevent changes
